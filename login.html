@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Animated Login Form</title>
+      <link rel="stylesheet" href="styles/log.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <header><img src="assets/logo.png" class="logo">Login Form</header>
+         <form>
+            <div class="input-field">
+               <input type="text" required>
+               <label>Email or Username</label>
+            </div>
+            <div class="input-field">
+               <input class="pswrd" type="password" required>
+               <span class="show">SHOW</span>
+               <label>Password</label>
+            </div>
+            <div class="button">
+               <div class="inner"></div>
+               <button>LOGIN</button>
+            </div>
+         </form>
+         <div class="auth">
+            Or login with
+         </div>
+         <div class="links">
+            <div class="google">
+               <i id="googleSignInBtn" class="fab fa-google"> Google</i>
+            </div>
+         </div>
+         <div class="signup">
+            Not a member? <a href="#">Signup now</a>
+         </div>
+      </div>
+      <script src="src/login.js"></script>
+      <script type="module" src="src/googleauth.js"></script>
+      <script src="src/register.js"></script>
+      <script type="module" src="src/form.js"></script>
+   </body>
+</html>
