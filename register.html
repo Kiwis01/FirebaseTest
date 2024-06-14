@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Animated Login Form</title>
+      <title>Register</title>
       <link rel="stylesheet" href="styles/log.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
    </head>
    <body>
       <div class="container">
-         <header><img src="assets/logo.png" class="logo">Login Form</header>
+         <header><img src="assets/logo.png" class="logo">Registration Form</header>
          <form>
             <div class="input-field">
                <input id="email" type="text" required>
@@ -22,25 +22,21 @@
                <span class="show">SHOW</span>
                <label>Password</label>
             </div>
+            <div class="input-field">
+                <input id="password2" class="pswrd" type="password" required>
+                <span class="show">SHOW</span>
+                <label>Confirm Password</label>
+             </div>
             <div class="button">
                <div class="inner"></div>
-               <button id="log">LOGIN</button>
+               <button id="reg">SIGN UP</button>
             </div>
+            <div class="signup">
+                <a href="index.html">Return</a>
+             </div>
          </form>
-         <div class="auth">
-            Or login with
-         </div>
-         <div class="links">
-            <div class="google">
-               <i id="googleSignInBtn" class="fab fa-google"> Google</i>
-            </div>
-         </div>
-         <div class="signup">
-            Not a member? <a href="register.html">Signup now</a>
-         </div>
       </div>
-      <script type="module" src="src/login.js"></script>
-      <script type="module" src="src/googleauth.js"></script>
+      <script type="module" src="src/register.js"></script>
       <script type="module" src="src/form.js"></script>
    </body>
 </html>
